@@ -25,7 +25,7 @@ $.fn.hasAttr = function(name) {
 			this.radial.radmenu({
 				listClass: 'gun', // the list class to look within for items
 				itemClass: 'bullet', // the items - NOTE: the HTML inside the item is copied into the menu item
-				radius: Alive.radius, // radius in pixels
+				radius: Alive.radius, // radius
 				animSpeed:Alive.animSpeed, // animation speed in millis
 				centerX: Alive.radius, // the center x axis offset
 				centerY: Alive.radius, // the center y axis offset
