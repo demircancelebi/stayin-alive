@@ -147,22 +147,24 @@ $.fn.hasAttr = function(name) {
 			Alive.probabilityOnShoot(arr,empty,full);
 		},
 		probabilityOnRoll: function(empty,full){
-			console.log("prob on roll: " + empty/(empty+full));
+			console.log("Survive probability on roll: " + empty/(empty+full));
 		},
 		probabilityOnShoot: function(arr,empty,full){
 			var t = Alive.turnCount + 1,
 				i = 0,
+				j = 0,
 				l = arr.length,			
+				condition = "",
 				s = 0; //number of survives
-				rollProb = [];
-			
+			var cndt;
+				for(j=0;j<=t;j++){ condition += "(arr[(i+"+j+")%l]) == 0 && " }
+				condition+="1";
 			$.each(arr,function(){
-				if(arr[i] == 0 && arr[(i+t)%l] == 0){
-					s++;
-				}
+				cndt = eval("{" + condition + "}");
+				if(cndt){ s++ }
 				i++;
 			});
-			console.log("prob on shoot: " + s/empty);
+			console.log("Survive probability on shot: " + s/empty + "\n")
 		}
 	}
 	Alive.init();
