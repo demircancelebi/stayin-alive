@@ -1,25 +1,21 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 12, ../scss/screen.scss */
+/* line 8, ../scss/screen.scss */
 a {
   text-decoration: none; }
 
-/* line 13, ../scss/screen.scss */
+/* line 9, ../scss/screen.scss */
 .scene {
   width: 445px;
   height: 445px;
   overflow: hidden; }
 
-/* line 18, ../scss/screen.scss */
+/* line 14, ../scss/screen.scss */
 .start.btn {
-  width: 124px;
+  width: 174px;
   position: absolute;
   left: 0;
   margin: 10px 0 0; }
 
-/* line 24, ../scss/screen.scss */
+/* line 20, ../scss/screen.scss */
 .bullet, .radial_div_item {
   width: 40px;
   height: 40px;
@@ -27,42 +23,41 @@ a {
   border: 2px solid #c8c8c8;
   background: #fafafa; }
 
-/* line 31, ../scss/screen.scss */
+/* line 27, ../scss/screen.scss */
 .full {
   background: #505050; }
 
-/* line 34, ../scss/screen.scss */
+/* line 30, ../scss/screen.scss */
 .shoot {
   float: left;
   display: none; }
 
-/* line 35, ../scss/screen.scss */
+/* line 31, ../scss/screen.scss */
 .roll {
   float: right;
   display: none; }
 
-/* line 36, ../scss/screen.scss */
+/* line 32, ../scss/screen.scss */
 .controls {
   float: left;
   position: absolute;
-  width: 150px;
-  margin: 190.5px 147.5px; }
+  width: 200px;
+  margin: 190.5px 122.5px; }
 
-/* line 42, ../scss/screen.scss */
+/* line 38, ../scss/screen.scss */
 .message-area {
   position: absolute;
-  top: 100px;
-  text-align: center;
-  width: 150px; }
+  top: 50px;
+  width: 200px; }
 
-/* line 48, ../scss/screen.scss */
+/* line 43, ../scss/screen.scss */
 #radial_container {
   position: absolute;
   left: 0;
   top: -10px;
   text-align: center; }
 
-/* line 54, ../scss/screen.scss */
+/* line 49, ../scss/screen.scss */
 input {
-  width: 136px;
+  width: 186px;
   margin: 0 0 4px !important; }
